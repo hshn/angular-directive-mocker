@@ -1,6 +1,8 @@
 angular-directive-mocker
 ===============
 
+[![Build Status](https://travis-ci.org/hshn/angular-directive-mocker.svg?branch=master)](https://travis-ci.org/hshn/angular-directive-mocker) [![npm version](https://badge.fury.io/js/angular-directive-mocker.svg)](https://badge.fury.io/js/angular-directive-mocker)
+
 `angular-directive-mocker` is a simple AngularJS directive/component mocking helper.
 
 [functional test source code here](https://github.com/hshn/angular-directive-mocker/tree/master/test/index.spec.ts)
