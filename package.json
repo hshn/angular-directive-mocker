@@ -4,6 +4,7 @@
   "description": "angular directive mocking helper",
   "keywords": ["AngularJS", "directive", "mock", "test"],
   "main": "index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "typings": "typings",
     "karma": "karma",
@@ -14,6 +15,7 @@
   },
   "author": "Shota Hoshino",
   "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "angular-mocks": "^1.5.7",
     "awesome-typescript-loader": "^2.0.1",
@@ -33,5 +35,10 @@
   },
   "peerDependencies": {
     "angular": "^1.5.7"
-  }
+  },
+  "files": [
+    "README.md",
+    "package.json",
+    "lib"
+  ]
 }
