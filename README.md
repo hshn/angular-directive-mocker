@@ -13,7 +13,7 @@ angular-directive-mocker
 $ npm install angular-directive-mocker --save-dev
 ```
 
-## Overriding directives/components
+## Mocking directives/components
 
 ### Define mocks
 
