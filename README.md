@@ -20,7 +20,7 @@ $ npm install angular-directive-mocker --save-dev
 ### Define mocks
 
 ```js
-import { directiveMockerBuilder } from '../src';
+import { directiveMockerBuilder } from 'angular-directive-mocker';
 
 let mocker = directiveMockerBuilder()
   .directive('bar', {
