@@ -27,13 +27,18 @@ describe('directive mocker', () => {
 
   interface Scope extends IScope {
     bar?: Bar
+    visible?: boolean
   }
 
   let $scope: Scope, $element;
   beforeEach(() => {
     angular.mock.module(testModule.name, mocker.getModule().name);
     angular.mock.inject(($rootScope: IRootScopeService, $compile: ICompileService) => {
-      $element = $compile('<foo bar="bar"></foo>')($scope = $rootScope.$new());
+      $element = $compile(`
+        <div>
+          <foo bar="bar" ng-if="visible"></foo>
+        </div>
+      `)($scope = $rootScope.$new());
     });
 
     $scope.$digest();
@@ -42,12 +47,22 @@ describe('directive mocker', () => {
   describe('directive bar', () => {
 
     it('should be overridden', () => {
-
+      $scope.visible = true;
       $scope.bar = {baz: 'test'};
       $scope.$digest();
 
-      expect($element.text()).toBe('bar mock');
+      expect($element.find('bar').length).toBe(1);
+      expect($element.text().trim()).toBe('bar mock');
       expect(bar().$scope.data).toEqual('test')
+    });
+
+    it('should work with ngIf', () => {
+      $scope.visible = false;
+      $scope.bar = {baz: 'test'};
+      $scope.$digest();
+
+      expect($element.find('bar').length).toBe(0);
+      expect($element.text().trim()).toEqual('');
     });
   });
 });

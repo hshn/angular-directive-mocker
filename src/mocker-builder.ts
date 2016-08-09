@@ -31,7 +31,7 @@ function mockerProvider(name: string, directive: IDirective) {
   let directiveMock: DirectiveMock<any>;
 
   directive = angular.extend({}, {
-    priority: 10000,
+    priority: 599,
     terminal: true,
     link: ($scope: IScope) => directiveMock = new DirectiveMock($scope)
   }, directive);
