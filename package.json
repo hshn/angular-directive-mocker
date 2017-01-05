@@ -20,7 +20,13 @@
   "author": "Shota Hoshino",
   "license": "MIT",
   "dependencies": {},
+  "peerDependencies": {
+    "angular": "^1.5.7"
+  },
   "devDependencies": {
+    "@types/angular": "^1.5.22",
+    "@types/angular-mocks": "^1.5.8",
+    "@types/jasmine": "^2.5.40",
     "angular": "^1.5.7",
     "angular-mocks": "^1.5.7",
     "awesome-typescript-loader": "^2.0.1",
@@ -34,7 +40,7 @@
     "karma-webpack": "^1.7.0",
     "rimraf": "^2.5.3",
     "source-maps-loader": "^0.1.7",
-    "typescript": "^1.8.10",
+    "typescript": "2.0.10",
     "webpack": "^1.13.1"
   },
   "files": [

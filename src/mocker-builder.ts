@@ -1,12 +1,9 @@
 import * as angular from 'angular';
+import { IDirective, IModule, IScope } from 'angular';
 
 import { DirectiveMocker } from './mocker';
 import { DirectiveMock } from './mock';
 import { DirectiveMockProvider } from './mock-provider';
-
-import IDirective = angular.IDirective;
-import IModule = angular.IModule;
-import IScope = angular.IScope;
 
 export class DirectiveMockerBuilder {
 

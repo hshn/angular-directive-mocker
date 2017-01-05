@@ -1,7 +1,6 @@
+import { IModule, IScope } from 'angular';
 import { DirectiveMockSupplier } from './mock-supplier';
 import { DirectiveMockProvider } from './mock-provider';
-import IModule = angular.IModule;
-import IScope = angular.IScope;
 
 export class DirectiveMocker {
   private mocks: {[name: string]: DirectiveMockSupplier<any>} = {};
