@@ -1,11 +1,9 @@
 import * as angular from 'angular';
-import 'angular-mocks/ngMock';
+import { IRootScopeService, ICompileService, IScope } from 'angular';
+import 'angular-mocks';
 
 import { directiveMockerBuilder } from '../src';
 import { testModule, Bar } from './module';
-import IRootScopeService = angular.IRootScopeService;
-import ICompileService = angular.ICompileService;
-import IScope = angular.IScope;
 
 let mocker = directiveMockerBuilder()
   .directive('bar', {
