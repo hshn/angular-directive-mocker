@@ -12,10 +12,6 @@
   "exclude": [
     "node_modules"
   ],
-  "files": [
-    "typings/index.d.ts",
-    "src/index.ts"
-  ],
   "awesomeTypescriptLoaderOptions": {
     "resolveGlobs": true,
     "forkChecker": true
