@@ -13,7 +13,7 @@
   "scripts": {
     "karma": "karma",
     "test": "karma start --single-run",
-    "clean": "rimraf ./dist",
+    "clean": "rimraf ./lib",
     "prebuild": "npm run clean",
     "build": "tsc -p tsconfig.json"
   },
