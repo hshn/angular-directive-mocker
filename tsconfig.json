@@ -7,6 +7,7 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "noEmitHelpers": true,
+    "rootDir": "src",
     "outDir": "lib",
     "lib": [
       "es5",
