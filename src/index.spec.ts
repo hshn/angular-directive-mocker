@@ -3,7 +3,7 @@ import { IRootScopeService, ICompileService, IScope } from 'angular';
 import 'angular-mocks';
 
 import { directiveMockerBuilder } from '../src';
-import { testModule, Bar } from './module';
+import { testModule, Bar } from './test';
 
 let mocker = directiveMockerBuilder()
   .directive('bar', {
