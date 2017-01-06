@@ -15,7 +15,9 @@
     "test": "karma start --single-run",
     "clean": "rimraf ./lib",
     "prebuild": "npm run clean",
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "preversion": "npm test",
+    "version": "npm run build"
   },
   "author": "Shota Hoshino",
   "license": "MIT",
