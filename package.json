@@ -15,7 +15,9 @@
     "test": "karma start --single-run",
     "clean": "rimraf ./lib",
     "prebuild": "npm run clean",
-    "build": "tsc -p tsconfig.json",
+    "build": "npm run build:compile && npm run build:bundle",
+    "build:compile": "tsc -p tsconfig.json",
+    "build:bundle": "rollup -c",
     "preversion": "npm test",
     "version": "npm run build"
   },
@@ -41,6 +43,8 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
     "rimraf": "^2.5.3",
+    "rollup": "^0.43.0",
+    "rollup-plugin-typescript": "^0.8.1",
     "source-maps-loader": "^0.1.7",
     "typescript": "2.0.10",
     "webpack": "^1.13.1"
