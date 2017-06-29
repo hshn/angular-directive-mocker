@@ -15,8 +15,9 @@
     "test": "karma start --single-run",
     "clean": "rimraf ./lib",
     "prebuild": "npm run clean",
-    "build": "tsc -p tsconfig.json",
-    "bundle": "rollup -c",
+    "build": "npm run build:compile && npm run build:bundle",
+    "build:compile": "tsc -p tsconfig.json",
+    "build:bundle": "rollup -c",
     "preversion": "npm test",
     "version": "npm run build"
   },
